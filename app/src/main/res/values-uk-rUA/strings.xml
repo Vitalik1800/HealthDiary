@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Щоденник здоров\'я</string>
+    <string name="main" translatable="true">Головна</string>
+    <string name="charts" translatable="true">Графіки</string>
+    <string name="settings" translatable="true">Налаштування</string>
+    <string name="export_to_csv" translatable="true">Експортувати дані в CSV</string>
+    <string name="no_records" translatable="true">Немає записів\nНатисніть + щоб додати</string>
+    <string name="no_data" translatable="true">Немає даних для графіків</string>
+    <string name="sleep" translatable="true">Сон</string>
+    <string name="mood" translatable="true">Настрій</string>
+    <string name="steps" translatable="true">Кроки</string>
+    <string name="weight" translatable="true">Вага</string>
+    <string name="sleep_hours" translatable="true">Сон (години)</string>
+    <string name="weight_kg" translatable="true">Вага (кг, необов\'язково)</string>
+    <string name="select_date" translatable="true">Вибрати дату</string>
+    <string name="save" translatable="true">Зберегти</string>
+    <string name="text_date" translatable="true">18 листопада 2025</string>
+    <string name="text_day_of_week" translatable="true">вівторок</string>
+    <string name="text_sleep" translatable="true">Сон: 7.5 год</string>
+    <string name="text_mood" translatable="true">Настрій: 4/5 😊</string>
+    <string name="Delete" translatable="true">Видалити</string>
+    <string name="Edit" translatable="true">Редагувати</string>
+    <string name="text_weight" translatable="true">Вага: 72.5 кг</string>
+    <string name="text_steps" translatable="true">Кроки: 10 234</string>
+    <string name="title_home" translatable="true">Головна</string>
+    <string name="title_charts" translatable="true">Графіки</string>
+    <string name="title_settings" translatable="true">Налаштування</string>
+    <string name="title_input" translatable="true">Ввести дані</string>
+    <string name="todayDay" translatable="true">Сьогодні</string>
+    <string name="DarkTheme" translatable="true">Темна тема</string>
+    <string name="LanguageInterface" translatable="true">Мова інтерфейсу</string>
+    <string name="hours">год</string>
+    <string name="mood_p">Настрій:</string>
+    <string name="w_kg">КГ</string>
+    <string name="weight_kg1">Вага (кг)</string>
+</resources>

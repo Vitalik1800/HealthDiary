@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_date"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#2e7d32"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/textDayOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_day_of_week"
+            android:textSize="16sp"
+            android:textColor="#43a047"
+            android:layout_below="@id/textDate"
+            android:layout_alignStart="@id/textDate"/>
+
+        <TextView
+            android:id="@+id/textSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_sleep"
+            android:textSize="17sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/textDate"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/textMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_mood"
+            android:textSize="17sp"
+            android:layout_below="@id/textSleep"
+            android:layout_alignEnd="@id/textSleep"/>
+
+        <TextView
+            android:id="@+id/textSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_steps"
+            android:textSize="17sp"
+            android:layout_below="@id/textMood"
+            android:layout_alignEnd="@id/textSleep"/>
+
+        <TextView
+            android:id="@+id/textWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_weight"
+            android:textSize="17sp"
+            android:layout_below="@id/textSteps"
+            android:layout_alignEnd="@id/textSleep"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonEdit"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/Edit"
+            android:textSize="16sp"
+            app:strokeColor="#43a047"
+            app:strokeWidth="2dp"
+            app:icon="@android:drawable/ic_menu_edit"
+            app:iconTint="#43a047"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDelete"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/Delete"
+            android:textColor="#d3232f"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:iconTint="#d3232f"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

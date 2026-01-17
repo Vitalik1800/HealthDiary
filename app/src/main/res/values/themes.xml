@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HealthDiary" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#43a047</item>
+        <item name="colorPrimaryVariant">#2e7d32</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorSecondary">#66bb6a</item>
+        <item name="android:colorBackground">#f5f5f5</item>
+        <item name="colorSurface">#ffffff</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:windowBackground">#f5f5f5</item>
+    </style>
+
+    <style name="Theme.HealthDiary" parent="Base.Theme.HealthDiary" />
+</resources>

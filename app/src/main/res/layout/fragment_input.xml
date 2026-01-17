@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="60dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutSleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sleep_hours"
+            app:hintTextColor="#43a047"
+            app:boxStrokeColor="#43a047"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="3dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editSleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColorHint="#757575"
+                android:textSize="18sp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvMoodLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSleep"
+            android:layout_marginTop="40dp"
+            android:text="@string/mood"
+            android:textColor="#2e7d32"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMoodLabel"
+            android:layout_marginTop="16dp"
+            android:valueFrom="1"
+            android:valueTo="5"
+            android:stepSize="1"
+            app:thumbColor="#43a047"
+            app:trackColorActive="#43a047"
+            app:haloColor="#334caf50"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sliderMood"
+            android:layout_marginTop="40dp"
+            android:hint="@string/steps"
+            app:hintTextColor="#43a047"
+            app:boxStrokeColor="#43a047"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColorHint="#757575"
+                android:textSize="18sp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSteps"
+            android:layout_marginTop="32dp"
+            android:hint="@string/weight_kg"
+            app:hintTextColor="#43a047"
+            app:boxStrokeColor="#43a047"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColorHint="#757575"
+                android:textSize="18sp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutDate"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutWeight"
+            android:layout_marginTop="40dp"
+            app:hintTextColor="#43a047"
+            app:boxStrokeColor="#43a047"
+            app:endIconMode="custom"
+            app:endIconDrawable="@android:drawable/ic_menu_my_calendar"
+            app:endIconTint="#43a047"
+            app:endIconContentDescription="@string/select_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:text="@string/todayDay"
+                android:textSize="18sp"
+                android:textColor="#2e7d32"
+                tools:ignore="VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_below="@id/layoutDate"
+            android:layout_marginTop="48dp"
+            android:text="@string/save"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#43a047"
+            app:icon="@android:drawable/ic_menu_save"
+            app:iconTint="#fff"
+            app:cornerRadius="20dp"
+            style="@style/Widget.MaterialComponents.Button"
+            tools:ignore="VisualLintButtonSize" />
+
+    </RelativeLayout>
+
+</ScrollView>

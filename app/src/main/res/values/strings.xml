@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name" translatable="true">HealthDiary</string>
+    <string name="main" translatable="true">Home</string>
+    <string name="charts" translatable="true">Charts</string>
+    <string name="settings" translatable="true">Settings</string>
+    <string name="export_to_csv" translatable="true">Export data to CSV</string>
+    <string name="no_records" translatable="true">No records\nTap + to add</string>
+    <string name="no_data" translatable="true">No data available for charts</string>
+    <string name="sleep" translatable="true">Sleep</string>
+    <string name="mood" translatable="true">Mood</string>
+    <string name="steps" translatable="true">Steps</string>
+    <string name="weight" translatable="true">Weight</string>
+    <string name="sleep_hours" translatable="true">Sleep (hours)</string>
+    <string name="weight_kg" translatable="true">Weight (kg, optional)</string>
+    <string name="select_date" translatable="true">Select date</string>
+    <string name="save" translatable="true">Save</string>
+    <string name="text_date" translatable="true">November 18, 2025</string>
+    <string name="text_day_of_week" translatable="true">Tuesday</string>
+    <string name="text_sleep" translatable="true">Sleep: 7.5 h</string>
+    <string name="text_mood" translatable="true">Mood: 4/5 😊</string>
+    <string name="Delete" translatable="true">Delete</string>
+    <string name="Edit" translatable="true">Edit</string>
+    <string name="text_weight" translatable="true">Weight: 72.5 kg</string>
+    <string name="text_steps" translatable="true">Steps: 10,234</string>
+    <string name="title_home" translatable="true">Home</string>
+    <string name="title_charts" translatable="true">Charts</string>
+    <string name="title_settings" translatable="true">Settings</string>
+    <string name="title_input" translatable="true">Enter data</string>
+    <string name="todayDay" translatable="true">Today</string>
+    <string name="DarkTheme" translatable="true">Dark theme</string>
+    <string name="LanguageInterface" translatable="true">Interface language</string>
+    <string name="hours">hours</string>
+    <string name="mood_p">Mood:</string>
+    <string name="w_kg">KG</string>
+    <string name="weight_kg1">Weight (kg)</string>
+</resources>
